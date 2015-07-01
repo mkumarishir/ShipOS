@@ -1,0 +1,76 @@
+﻿@using System.Security.Claims
+
+@if (User.Identity.IsAuthenticated)
+{
+    <form asp-controller="Account" asp-action="LogOff" method="post" id="logoutForm" class="navbar-right">
+
+        <ul>
+            <li class="light-blue">
+                <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                    <img class="nav-user-photo" src="../assets/avatars/user.jpg" alt="Jason's Photo" />
+                    <span class="user-info">
+                        <small>Welcome,</small>
+                        @User.GetUserName()
+                    </span>
+
+                    <i class="ace-icon fa fa-caret-down"></i>
+                </a>
+
+                <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-closer">
+                    <li>
+                        <a href="#">
+                            <i class="ace-icon fa fa-cog"></i>
+                            Settings
+                        </a>
+                    </li>
+
+                    <li class="divider"></li>
+
+                    <li>
+                        <a href="#">
+                            <i class="ace-icon fa fa-power-off"></i>
+                            <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </form>
+}
+else
+{
+    <ul>
+        <li class="light-blue">
+            <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                <img class="nav-user-photo" src="../assets/avatars/user.jpg" alt="Jason's Photo" />
+                <span class="user-info">
+                    <small>Welcome,</small>
+                    Guest
+                </span>
+
+                <i class="ace-icon fa fa-caret-down"></i>
+            </a>
+
+            <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-closer">
+                <li>
+                    <a href="#">
+                        <i class="ace-icon fa fa-cog"></i>
+                        Register
+                    </a>
+                </li>
+
+                <li class="divider"></li>
+
+                <li>
+                    <a href="#">
+                        <i class="ace-icon fa fa-power-off"></i>
+                        <a href="#">Log in</a>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
+}

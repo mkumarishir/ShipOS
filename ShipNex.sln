@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{56A2F2B6-C946-4A2E-B51D-A7A71D762128}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{15451A03-529D-4FF8-8663-937B9A3D9BDA}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ShipNex", "src\ShipNex\ShipNex.xproj", "{8FD9CC9D-7410-4F76-962E-7D9E2CC81564}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FD9CC9D-7410-4F76-962E-7D9E2CC81564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FD9CC9D-7410-4F76-962E-7D9E2CC81564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FD9CC9D-7410-4F76-962E-7D9E2CC81564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FD9CC9D-7410-4F76-962E-7D9E2CC81564}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8FD9CC9D-7410-4F76-962E-7D9E2CC81564} = {56A2F2B6-C946-4A2E-B51D-A7A71D762128}
+	EndGlobalSection
+EndGlobal

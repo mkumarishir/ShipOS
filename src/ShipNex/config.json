@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "ShipNex"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-ShipNex-4ece350d-2b79-455c-a5d8-91a4b93bf9d3;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}
